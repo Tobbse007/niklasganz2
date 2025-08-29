@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="de" class="h-full">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Niklas Ganz – Ads & Kurzvideos</title>
+			<!-- Tailwind via CDN so this file works without any build/terminal step -->
+			<script src="https://cdn.tailwindcss.com"></script>
+			<!-- Inter Font (gewünscht) -->
+			<link rel="preconnect" href="https://fonts.googleapis.com" />
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+			<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+			<script>
+				// Mirror your tailwind.config.js for CDN usage
+				tailwind.config = {
+					theme: {
+						extend: {
+							colors: {
+								primary: {
+									50: '#eff6ff',
+									100: '#dbeafe',
+									200: '#bfdbfe',
+									300: '#93c5fd',
+									400: '#60a5fa',
+									500: '#3b82f6',
+									600: '#2563eb',
+									700: '#1d4ed8',
+									800: '#1e40af',
+									900: '#1e3a8a',
+									950: '#172554',
+								},
+								secondary: {
+									50: '#fffbeb',
+									100: '#fef3c7',
+									200: '#fde68a',
+									300: '#fcd34d',
+									400: '#fbbf24',
+									500: '#f59e0b',
+									600: '#d97706',
+									700: '#b45309',
+									800: '#92400e',
+									900: '#78350f',
+									950: '#451a03',
+								},
+								accent: {
+									50: '#ecfdf5',
+									100: '#d1fae5',
+									200: '#a7f3d0',
+									300: '#6ee7b7',
+									400: '#34d399',
+									500: '#10b981',
+									600: '#059669',
+									700: '#047857',
+									800: '#065f46',
+									900: '#064e3b',
+									950: '#022c22',
+								}
+							},
+										fontFamily: {
+											sans: ['Inter', 'system-ui', 'sans-serif'],
+											display: ['Inter', 'system-ui', 'sans-serif'],
+										},
+							animation: {
+								'fade-in': 'fadeIn 0.5s ease-in-out',
+								'slide-up': 'slideUp 0.6s ease-out',
+								'bounce-slow': 'bounce 2s infinite',
+								'pulse-slow': 'pulse 3s infinite',
+							},
+							keyframes: {
+								fadeIn: {
+									'0%': { opacity: '0' },
+									'100%': { opacity: '1' },
+								},
+								slideUp: {
+									'0%': { transform: 'translateY(20px)', opacity: '0' },
+									'100%': { transform: 'translateY(0)', opacity: '1' },
+								}
+							},
+							boxShadow: {
+								'custom': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+								'custom-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+								'custom-xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+							}
+						},
+					},
+				};
+			</script>
+		<meta name="color-scheme" content="light" />
+	</head>
+		<body class="min-h-full bg-white text-slate-800 font-sans">
+			<!-- New Light Navbar -->
+			<header class="bg-white">
+				<nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+					<div class="flex h-20 items-center justify-between">
+						<!-- Brand -->
+						<a href="#" class="flex items-center gap-2">
+							<span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-100 text-indigo-600 ring-1 ring-inset ring-indigo-200">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2Zm-1.5 7a1.5 1.5 0 1 1 1.5 1.5A1.5 1.5 0 0 1 10.5 9Zm5.5 6.5A6 6 0 0 1 6 15.5a.75.75 0 0 1 1.5 0 4.5 4.5 0 0 0 9 0 .75.75 0 0 1 1.5 0Z"/></svg>
+							</span>
+							<span class="text-lg font-semibold tracking-tight text-slate-900">Niklas Ganz</span>
+						</a>
+						<!-- Desktop Nav -->
+						<div class="hidden md:flex items-center gap-8">
+							<a href="#" class="text-slate-600 hover:text-slate-900 transition">Start</a>
+							<a href="#about" class="text-slate-600 hover:text-slate-900 transition">Über mich</a>
+							<a href="#services" class="text-slate-600 hover:text-slate-900 transition">Leistungen</a>
+							<button class="inline-flex items-center gap-1 text-slate-600 hover:text-slate-900 transition" onclick="location.href='#showcases'">
+								Showcases
+								<svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08Z" clip-rule="evenodd"/></svg>
+							</button>
+						</div>
+						<!-- Actions -->
+						<div class="hidden md:flex items-center">
+							<a href="#contact" class="inline-flex items-center rounded-full bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700">Kontakt</a>
+						</div>
+						<!-- Mobile menu btn (optional hidden for simplicity) -->
+						<div class="md:hidden"></div>
+					</div>
+				</nav>
+			</header>
+
+			<!-- New Hero -->
+			<main>
+				<section class="relative">
+					<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+						<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 py-10 lg:py-16">
+							<!-- Left content -->
+							<div class="lg:col-span-6 xl:col-span-6">
+								<div class="max-w-2xl">
+									<!-- badge -->
+									<span class="inline-flex items-center gap-2 rounded-full bg-indigo-100 text-indigo-700 ring-1 ring-inset ring-indigo-200 px-3 py-1 text-xs font-medium">
+										<span class="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
+										Ads & Kurzvideos
+									</span>
+									<h1 class="mt-6 text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight text-slate-900">
+										<span class="block">Kurzvideos & Performance‑Ads</span>
+										<span class="block">die Umsatz steigern</span>
+										<span class="block font-semibold text-slate-800">und mehr Kunden bringen.</span>
+									</h1>
+									<p class="mt-6 text-slate-600 leading-relaxed">
+										Ich helfe Unternehmen mit performanten Reels, TikToks und Werbeanzeigen, die
+										Aufmerksamkeit erzeugen, Vertrauen aufbauen und planbar Anfragen liefern.
+									</p>
+									<div class="mt-8 flex flex-wrap items-center gap-4">
+										<a href="kontakt.html" class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700">Kostenloses Erstgespräch
+											<svg class="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69L10.22 6.03a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/></svg>
+										</a>
+										<a href="#showcases" class="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-700 ring-1 ring-slate-200 hover:bg-slate-50">Showreel ansehen
+											<svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7-11-7Z"/></svg>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Right image card -->
+							<div class="lg:col-span-6 xl:col-span-6">
+								<div class="relative rounded-3xl overflow-hidden ring-1 ring-slate-200 shadow-custom-xl bg-slate-100">
+									<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Business working" class="h-[440px] w-full object-cover" />
+									<!-- gradient overlay for text readability -->
+									<div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+									<div class="absolute bottom-5 left-5 right-5">
+										<p class="text-white text-2xl sm:text-3xl font-semibold leading-snug">„Kurzvideos, die verkaufen.“</p>
+										<p class="mt-3 text-white/90 text-xs">Niklas Ganz</p>
+									</div>
+									<!-- play btn -->
+									<button class="absolute bottom-4 right-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/50 backdrop-blur ring-1 ring-white/70 hover:bg-white/70">
+										<svg class="h-6 w-6 text-slate-800" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7-11-7Z"/></svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+      
+						<!-- Clients strip -->
+						<section aria-labelledby="clients" class="py-10 sm:py-12 lg:py-14">
+							<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+								<p id="clients" class="text-center text-sm font-medium text-slate-400">Vertrauen von</p>
+								<ul class="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 items-center gap-x-10 gap-y-6">
+									<li class="flex items-center justify-center gap-2 text-slate-700">
+										<span class="inline-flex h-7 w-7 items-center justify-center rounded-md bg-slate-100 text-slate-600 ring-1 ring-inset ring-slate-200">
+											<svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4"><path d="M12 3 22 21H2L12 3Z"/></svg>
+										</span>
+										<span class="font-semibold">Adobe</span>
+									</li>
+									<li class="flex items-center justify-center gap-2 text-slate-700">
+										<span class="inline-flex h-7 w-7 items-center justify-center rounded-md bg-indigo-100 text-indigo-600 ring-1 ring-inset ring-indigo-200">
+											<svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4"><path d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2Z"/></svg>
+										</span>
+										<span class="font-semibold">loom</span>
+									</li>
+									<li class="flex items-center justify-center gap-2 text-slate-700">
+										<span class="inline-flex h-7 w-7 items-center justify-center rounded-md bg-slate-100 text-slate-600 ring-1 ring-inset ring-slate-200">
+											<svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4"><path d="M5 3h6v6H5zM13 3h6v10h-6zM5 11h6v10H5z"/></svg>
+										</span>
+										<span class="font-semibold">Google Analytics</span>
+									</li>
+									<li class="flex items-center justify-center gap-2 text-slate-700">
+										<span class="inline-flex h-7 w-7 items-center justify-center rounded-md bg-slate-100 text-slate-600 ring-1 ring-inset ring-slate-200">
+											<svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4"><path d="M9 19V5l12 7-12 7Z"/></svg>
+										</span>
+										<span class="font-semibold">Spotify</span>
+									</li>
+									<li class="flex items-center justify-center gap-2 text-slate-700">
+										<span class="inline-flex h-7 w-7 items-center justify-center rounded-md bg-blue-100 text-blue-600 ring-1 ring-inset ring-blue-200">
+											<svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4"><path d="M4 4h16v6H4zM4 14h10v6H4z"/></svg>
+										</span>
+										<span class="font-semibold">Dropbox</span>
+									</li>
+								</ul>
+							</div>
+						</section>
+
+								<!-- About Us -->
+								<section id="about" class="py-12 sm:py-16 lg:py-20">
+									<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+										<!-- Header row -->
+										<div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+											<div>
+												<h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Über mich</h2>
+												<p class="mt-2 max-w-3xl text-slate-500">Ich produziere leistungsstarke Ads und Kurzvideos (Reels, TikTok, Shorts), damit Unternehmen sichtbarer werden, mehr Anfragen erhalten und ihren Umsatz steigern.</p>
+											</div>
+											<a href="kontakt.html" class="inline-flex items-center self-start rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700">
+												Unverbindlich anfragen
+												<svg class="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69L10.22 6.03a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/></svg>
+											</a>
+										</div>
+
+										<!-- Content grid -->
+										<div class="mt-8 grid grid-cols-1 gap-6 lg:mt-10 lg:grid-cols-12">
+											<!-- Left image -->
+											<div class="lg:col-span-6">
+												<div class="overflow-hidden rounded-2xl ring-1 ring-slate-200 shadow-custom-lg">
+													<img src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=1400&auto=format&fit=crop" alt="Team working in a meeting room" class="h-[320px] w-full object-cover sm:h-[360px] lg:h-[420px]" />
+												</div>
+											</div>
+
+											<!-- Right card -->
+											<div class="lg:col-span-6">
+												<div class="rounded-2xl bg-slate-50 ring-1 ring-slate-200 p-6 sm:p-8 shadow-custom">
+													<h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Warum Kurzvideos für Ihr Wachstum <span class="text-indigo-600">funktionieren</span></h3>
+													<p class="mt-4 text-slate-600">Hooks, klare Botschaften und schnelles Storytelling. Ich kombiniere Content, der auffällt, mit Performance‑Schnitt und Social‑Proof – damit aus Aufmerksamkeit Anfragen werden.</p>
+
+													<dl class="mt-6 grid grid-cols-3 gap-4">
+														<div>
+															<dd class="text-xl sm:text-2xl font-extrabold text-slate-900">5+</dd>
+															<dt class="mt-1 text-xs text-slate-500">Jahre Erfahrung</dt>
+														</div>
+														<div>
+															<dd class="text-xl sm:text-2xl font-extrabold text-slate-900">150+</dd>
+															<dt class="mt-1 text-xs text-slate-500">Produzierte Videos</dt>
+														</div>
+														<div>
+															<dd class="text-xl sm:text-2xl font-extrabold text-slate-900">30+</dd>
+															<dt class="mt-1 text-xs text-slate-500">Branchen</dt>
+														</div>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+										<!-- Stats Section -->
+												<section aria-labelledby="our-stats" class="py-8 sm:py-10 lg:py-12">
+													<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+																	<div class="rounded-[1.75rem] bg-[#F8FAFC] ring-1 ring-slate-100 p-6 sm:p-8 lg:px-12 lg:py-10">
+																		<div class="grid grid-cols-1 gap-8 lg:grid-cols-5 lg:items-start">
+																<!-- Title + description -->
+																<div class="lg:col-span-2">
+																	<h3 id="our-stats" class="text-2xl font-extrabold text-slate-900">Ergebnisse in Zahlen</h3>
+																	<p class="mt-2 max-w-xs text-sm text-slate-500">Kurzvideos und Ads, die messbar performen</p>
+																</div>
+
+																<!-- Metrics -->
+																				<dl class="lg:col-span-3 grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-12 lg:gap-16 items-start">
+																					<div class="text-center">
+																						<dd class="text-[30px] sm:text-[34px] lg:text-[36px] font-extrabold tracking-tight text-[#5B61FF]">260+</dd>
+																						<dt class="mt-2 text-xs sm:text-sm text-slate-500 whitespace-nowrap">zufriedene Kund:innen</dt>
+																	</div>
+																					<div class="text-center">
+																						<dd class="text-[30px] sm:text-[34px] lg:text-[36px] font-extrabold tracking-tight text-[#5B61FF]">975+</dd>
+																						<dt class="mt-2 text-xs sm:text-sm text-slate-500 whitespace-nowrap">laufende Projekte</dt>
+																	</div>
+																					<div class="text-center">
+																						<dd class="text-[30px] sm:text-[34px] lg:text-[36px] font-extrabold tracking-tight text-[#5B61FF]">724+</dd>
+																						<dt class="mt-2 text-xs sm:text-sm text-slate-500 whitespace-nowrap">abgeschlossene Produktionen</dt>
+																	</div>
+																					<div class="text-center">
+																						<dd class="text-[30px] sm:text-[34px] lg:text-[36px] font-extrabold tracking-tight text-[#5B61FF]">89+</dd>
+																						<dt class="mt-2 text-xs sm:text-sm text-slate-500 whitespace-nowrap">geplante Drehs</dt>
+																	</div>
+																</dl>
+															</div>
+														</div>
+											</div>
+										</section>
+			</main>
+    
+											<!-- Services / Solutions -->
+											<section id="services" class="py-14 sm:py-16 lg:py-20 bg-white">
+												<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+													<!-- Heading -->
+													<div class="text-center max-w-3xl mx-auto">
+														<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Leistungen für mehr Umsatz mit Kurzvideos</h2>
+														<p class="mt-3 text-slate-600">Von der Idee bis zur Ausspielung: Reels, TikTok & YouTube Shorts inklusive Ad‑Setups, Creatives und Optimierung.</p>
+													</div>
+
+													<!-- Tabs (pills) -->
+													<div class="mt-8 flex justify-center">
+																				<div role="tablist" aria-label="Services" class="inline-flex gap-2 rounded-full bg-slate-100 p-1 ring-1 ring-slate-200">
+																					<button role="tab" aria-selected="true" data-tab="smart" class="service-tab rounded-full px-4 sm:px-6 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-200 aria-selected:bg-indigo-100 aria-selected:text-indigo-700 aria-selected:ring-1 aria-selected:ring-indigo-200 aria-selected:shadow-sm">Ad‑Strategie</button>
+																					<button role="tab" aria-selected="false" data-tab="content" class="service-tab rounded-full px-4 sm:px-6 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-200 aria-selected:bg-indigo-100 aria-selected:text-indigo-700 aria-selected:ring-1 aria-selected:ring-indigo-200 aria-selected:shadow-sm">Content‑Produktion</button>
+																					<button role="tab" aria-selected="false" data-tab="analytics" class="service-tab rounded-full px-4 sm:px-6 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-200 aria-selected:bg-indigo-100 aria-selected:text-indigo-700 aria-selected:ring-1 aria-selected:ring-indigo-200 aria-selected:shadow-sm">Performance‑Analyse</button>
+																					<button role="tab" aria-selected="false" data-tab="nurturing" class="service-tab rounded-full px-4 sm:px-6 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-200 aria-selected:bg-indigo-100 aria-selected:text-indigo-700 aria-selected:ring-1 aria-selected:ring-indigo-200 aria-selected:shadow-sm">Creator‑Optimierung</button>
+																	</div>
+													</div>
+
+															<!-- Slider panels -->
+																	<div class="mt-8">
+																		<div id="service-viewport" class="relative overflow-hidden transition-[height] duration-500 ease-in-out">
+																			<div id="service-track" class="flex transition-transform duration-600 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform">
+																		<!-- Panel: Smart Campaigns -->
+																		<div role="tabpanel" aria-hidden="false" data-panel="smart" class="w-full flex-none service-panel rounded-3xl ring-1 ring-slate-200 shadow-custom overflow-hidden bg-white p-4 sm:p-6 lg:p-8">
+																			<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+																				<div class="lg:col-span-5">
+																					<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1280&auto=format&fit=crop" alt="Team working" class="h-64 sm:h-72 lg:h-80 w-full rounded-2xl object-cover" />
+																				</div>
+																				<div class="lg:col-span-7">
+																					<p class="text-slate-600">Gemeinsam definieren wir Zielgruppe, Botschaften und Angebote. Ich entwickle eine Ad‑Strategie mit Hook‑Ideen, Storyboards und klaren Calls‑to‑Action – passend zu Ihrer Marke und Ihren Zielen.</p>
+																					<p class="mt-3 text-slate-600">Von Awareness bis Conversion: Ich plane Formate, Anzeigensets und Tests, damit Sie konstant lernen und skalieren können.</p>
+																					<div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Hook‑Bibliothek</h4>
+																							<p class="mt-1 text-sm text-slate-600">Bewährte Hook‑Frames für starke erste Sekunden.</p>
+																						</div>
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Angebots‑Mapping</h4>
+																							<p class="mt-1 text-sm text-slate-600">Botschaften und Offers entlang der Journey.</p>
+																						</div>
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Testplan</h4>
+																							<p class="mt-1 text-sm text-slate-600">Systematisches Creative‑Testing für Lerngewinne.</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+
+																		<!-- Panel: Personalized Content -->
+																		<div role="tabpanel" aria-hidden="true" data-panel="content" class="w-full flex-none service-panel rounded-3xl ring-1 ring-slate-200 shadow-custom overflow-hidden bg-white p-4 sm:p-6 lg:p-8">
+																			<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+																				<div class="lg:col-span-5">
+																					<img src="https://images.unsplash.com/photo-1529336953121-a0ce923d0eac?q=80&w=1280&auto=format&fit=crop" alt="Content creation" class="h-64 sm:h-72 lg:h-80 w-full rounded-2xl object-cover" />
+																				</div>
+																				<div class="lg:col-span-7">
+																					<p class="text-slate-600">Produktion von performanten Kurzvideos: Planung, Dreh, Schnitt, Motion‑Text, Subtitles, Varianten. Optimiert für 9:16 und die jeweiligen Plattformen.</p>
+																					<div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Skript & Storyboard</h4>
+																							<p class="mt-1 text-sm text-slate-600">Klarer Aufbau mit Hook, Proof, Offer, CTA.</p>
+																						</div>
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Dreh & Schnitt</h4>
+																							<p class="mt-1 text-sm text-slate-600">Effizienter Dreh, schneller Schnitt, Varianten.</p>
+																						</div>
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Motion & Subtitles</h4>
+																							<p class="mt-1 text-sm text-slate-600">Animierte Text‑Highlights und Captions.</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+
+																		<!-- Panel: Performance Analytics -->
+																		<div role="tabpanel" aria-hidden="true" data-panel="analytics" class="w-full flex-none service-panel rounded-3xl ring-1 ring-slate-200 shadow-custom overflow-hidden bg-white p-4 sm:p-6 lg:p-8">
+																			<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+																				<div class="lg:col-span-5">
+																					<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1280&auto=format&fit=crop" alt="Analytics dashboard" class="h-64 sm:h-72 lg:h-80 w-full rounded-2xl object-cover" />
+																				</div>
+																				<div class="lg:col-span-7">
+																					<p class="text-slate-600">Transparente Performance‑Auswertung: Hook‑Rate, View‑Through, CTR, Cost‑per‑Lead und Revenue‑KPIs – übersichtlich aufbereitet.</p>
+																					<div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Creative‑KPIs</h4>
+																							<p class="mt-1 text-sm text-slate-600">Hook‑Rate, Scroll‑Stop & View‑Through.</p>
+																						</div>
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Funnel‑KPIs</h4>
+																							<p class="mt-1 text-sm text-slate-600">CTR, CPL/CPA und Umsatz‑Attribution.</p>
+																						</div>
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Reports</h4>
+																							<p class="mt-1 text-sm text-slate-600">Wöchentliche Learnings & klare To‑dos.</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+
+																		<!-- Panel: Lead Nurturing -->
+																		<div role="tabpanel" aria-hidden="true" data-panel="nurturing" class="w-full flex-none service-panel rounded-3xl ring-1 ring-slate-200 shadow-custom overflow-hidden bg-white p-4 sm:p-6 lg:p-8">
+																			<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+																				<div class="lg:col-span-5">
+																					<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1280&auto=format&fit=crop" alt="Lead nurturing" class="h-64 sm:h-72 lg:h-80 w-full rounded-2xl object-cover" />
+																				</div>
+																				<div class="lg:col-span-7">
+																					<p class="text-slate-600">Kontinuierliche Optimierung der Creatives: neue Hooks, Schnitte, Intros, Thumbnails, Formate. So bleiben Ads frisch und effizient.</p>
+																					<div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Iterationen</h4>
+																							<p class="mt-1 text-sm text-slate-600">Schnelle Verbesserungen nach Metrics.</p>
+																						</div>
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Formate</h4>
+																							<p class="mt-1 text-sm text-slate-600">UGC, Produkt, Testimonial, Founder‑Video.</p>
+																						</div>
+																						<div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
+																							<h4 class="font-semibold text-slate-900">Asset‑System</h4>
+																							<p class="mt-1 text-sm text-slate-600">Bibliothek für wiederverwendbare Snippets.</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+												</div>
+											</section>
+
+												<script>
+													// Tabs-controlled horizontal slider for Services
+													(function(){
+														const tabs = Array.from(document.querySelectorAll('.service-tab'));
+														const viewport = document.getElementById('service-viewport');
+														const track = document.getElementById('service-track');
+														const panels = Array.from(track?.children || []);
+														if (!tabs.length || !track || !panels.length) return;
+														const order = tabs.map(t => t.dataset.tab);
+														let index = 0;
+
+														function syncHeight(){
+															const active = panels[index];
+															if (!active || !viewport) return;
+															// Set viewport height to active panel for smoother transition
+															viewport.style.height = active.offsetHeight + 'px';
+														}
+
+														function show(i){
+															index = (i + order.length) % order.length;
+															const key = order[index];
+															tabs.forEach(btn => btn.setAttribute('aria-selected', String(btn.dataset.tab === key)));
+															panels.forEach((p, idx) => p.setAttribute('aria-hidden', String(idx !== index)));
+															track.style.transform = `translateX(-${index * 100}%)`;
+															syncHeight();
+														}
+
+														// Set equal widths and initial height after images load
+														function initSizes(){
+															panels.forEach(p => p.style.width = viewport.clientWidth + 'px');
+															syncHeight();
+														}
+														window.addEventListener('resize', initSizes);
+														// Wait a frame for layout, then init
+														requestAnimationFrame(() => { initSizes(); show(0); });
+
+														tabs.forEach((btn, i) => btn.addEventListener('click', () => show(i)));
+
+														// Keyboard arrow support on tablist
+														const tablist = tabs[0]?.parentElement;
+														tablist && tablist.addEventListener('keydown', (e) => {
+															if (e.key === 'ArrowRight') { show(index + 1); e.preventDefault(); }
+															if (e.key === 'ArrowLeft') { show(index - 1); e.preventDefault(); }
+														});
+													})();
+												</script>
+
+													<!-- CTA: Connect with us -->
+													<section id="cta" class="py-12 sm:py-14 lg:py-16 bg-white">
+														<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+															<div class="rounded-3xl bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 p-8 sm:p-10 lg:p-12 shadow-lg">
+																<div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+																	<div class="text-white">
+																		<h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Kostenloses Erstgespräch sichern</h3>
+																		<p class="mt-2 text-white/90">Kurze Anfrage – ich melde mich innerhalb von 24 Stunden.</p>
+																	</div>
+																	<a href="kontakt.html" class="inline-flex items-center justify-center rounded-full bg-white px-6 sm:px-7 py-3 text-indigo-600 font-semibold shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5">
+																		Unverbindlich anfragen
+																		<svg class="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L13.586 11H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</section>
+
+													<!-- Showcases (restyled to match sections) -->
+													<section id="showcases" aria-labelledby="showcases-title" class="py-14 sm:py-16 lg:py-20 bg-white">
+														<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+															<!-- Section header -->
+															<div class="text-center max-w-3xl mx-auto">
+																<h2 id="showcases-title" class="text-3xl sm:text-4xl font-extrabold text-slate-900">Showcases</h2>
+																<p class="mt-3 text-slate-600">Ausgewählte Projekte im 9:16‑Format – optimiert für Reels, TikTok und Shorts.</p>
+															</div>
+
+															<!-- Controls outside the card -->
+															<div class="mt-8 flex flex-col gap-3 max-w-6xl mx-auto">
+																<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+																	<span id="showcase-count" class="inline-flex items-center justify-center self-start rounded-full bg-slate-100 text-slate-700 ring-1 ring-slate-200 px-3 py-1 text-xs font-medium">1 / 3</span>
+																	<div class="flex items-center justify-center gap-3">
+																		<button id="showcase-prev" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-700 ring-1 ring-slate-200 shadow hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-indigo-300" aria-label="Vorheriges Projekt">
+																			<svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 4.293a1 1 0 010 1.414L9.414 9l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+																		</button>
+																		<div id="showcase-dots" class="flex items-center justify-center gap-2" aria-label="Slide navigation"></div>
+																		<button id="showcase-next" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-700 ring-1 ring-slate-200 shadow hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-indigo-300" aria-label="Nächstes Projekt">
+																			<svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 4.293a1 1 0 000 1.414L10.586 9 7.293 12.293a1 1 0 101.414 1.414l4-4a1 1 0 000-1.414l-4-4a1 1 0 00-1.414 0z" clip-rule="evenodd"/></svg>
+																		</button>
+																	</div>
+																</div>
+
+																<!-- Slider card -->
+																<div class="relative rounded-3xl ring-1 ring-slate-200 shadow-custom bg-white p-5 sm:p-6 lg:p-8 max-w-6xl mx-auto">
+																<!-- Slider viewport -->
+																<div id="showcase-viewport" class="overflow-hidden">
+																	<div id="showcase-track" class="flex transition-transform duration-500 ease-out" style="transform: translateX(0%)">
+																		<!-- Slide 1 -->
+																		<article class="shrink-0 w-full">
+																			<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+																				<div class="lg:col-span-7">
+																					<span class="inline-flex items-center gap-2 rounded-full bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200 px-3 py-1 text-xs font-medium">
+																						<span class="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
+																						Fallstudie
+																					</span>
+																					<h3 class="mt-3 text-2xl sm:text-3xl font-bold text-slate-900">Social Ads Reel – <span class="text-indigo-600">Produkt Launch</span></h3>
+																					<p class="mt-3 text-slate-600">Hook in den ersten 2 Sekunden, Benefit-Overlays, schnelle Schnitte. Optimiert für Reels, TikTok und Shorts – natürlich im 9:16‑Format.</p>
+																					<ul class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+																						<li class="rounded-xl bg-indigo-50 ring-1 ring-indigo-200 p-3">
+																							<div class="flex items-center gap-2">
+																								<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-600 text-white text-xs font-bold">↗</span>
+																								<span class="text-sm font-semibold text-indigo-900">+21% Conversion</span>
+																							</div>
+																							<p class="mt-1 text-xs text-indigo-700">im A/B‑Test</p>
+																						</li>
+																						<li class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-3">
+																							<div class="flex items-center gap-2">
+																								<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-600 text-white text-xs font-bold">%</span>
+																								<span class="text-sm font-semibold text-slate-900">CTR 2,9% → 4,1%</span>
+																							</div>
+																							<p class="mt-1 text-xs text-slate-600">Click‑Through‑Rate</p>
+																						</li>
+																						<li class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-3">
+																							<div class="flex items-center gap-2">
+																								<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-600 text-white text-xs font-bold">⚡</span>
+																								<span class="text-sm font-semibold text-slate-900">1 Drehtag</span>
+																							</div>
+																							<p class="mt-1 text-xs text-slate-600">3 Iterationen</p>
+																						</li>
+																					</ul>
+																					<p class="mt-4 text-sm text-slate-600">„Die Reels haben unserem Launch den Schub gegeben. Besonders die erste Sekunde zieht.“ – Leitung Marketing</p>
+																					<!-- Removed Kunde/Leistung details per request -->
+
+																			<!-- Testimonial inside showcase box -->
+																			<div class="mt-6">
+																				<figure>
+																					<blockquote class="rounded-2xl bg-white ring-1 ring-slate-200 shadow-custom p-5 sm:p-6">
+
+																						<p class="mt-3 text-slate-600">“Die Reels haben unserem Launch den Schub gegeben. Besonders die erste Sekunde zieht.”</p>
+																						<figcaption class="mt-4 flex items-center gap-3 text-sm">
+																							<span class="font-semibold text-slate-900">Harsh P.</span>
+																							<span class="text-slate-300">|</span>
+																							<span class="text-slate-500">Produktdesigner</span>
+																						</figcaption>
+																					</blockquote>
+																				</figure>
+																			</div>
+
+																			</div>
+																				<div class="lg:col-span-5 flex justify-center lg:justify-end">
+																					<div class="relative w-[180px] sm:w-[220px] lg:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-slate-200 shadow-custom bg-slate-100">
+																						<video class="absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1200&auto=format&fit=crop">
+																							<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+																						</video>
+																					</div>
+																				</div>
+																			</div>
+																		</article>
+
+																		<!-- Slide 2 -->
+																		<article class="shrink-0 w-full">
+																			<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+																				<div class="lg:col-span-7">
+																					<span class="inline-flex items-center gap-2 rounded-full bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200 px-3 py-1 text-xs font-medium">
+																						<span class="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
+																						Fallstudie
+																					</span>
+																					<h3 class="mt-3 text-2xl sm:text-3xl font-bold text-slate-900">Recruiting Ad – <span class="text-indigo-600">Employer Branding</span></h3>
+																					<p class="mt-3 text-slate-600">Schnelle Storyline mit Mitarbeitenden‑Statements. Subtitles für stummes Abspielen, klare CTA zum Bewerbungsformular.</p>
+																					<ul class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+																						<li class="rounded-xl bg-indigo-50 ring-1 ring-indigo-200 p-3">
+																							<div class="flex items-center gap-2">
+																								<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-600 text-white text-xs font-bold">⏱</span>
+																								<span class="text-sm font-semibold text-indigo-900">+38% Watchtime</span>
+																							</div>
+																							<p class="mt-1 text-xs text-indigo-700">längere Aufmerksamkeit</p>
+																						</li>
+																						<li class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-3">
+																							<div class="flex items-center gap-2">
+																								<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-600 text-white text-xs font-bold">€</span>
+																								<span class="text-sm font-semibold text-slate-900">-24% CPC</span>
+																							</div>
+																							<p class="mt-1 text-xs text-slate-600">Cost‑per‑Click gesenkt</p>
+																						</li>
+																						<li class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-3">
+																							<div class="flex items-center gap-2">
+																								<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-600 text-white text-xs font-bold">📱</span>
+																								<span class="text-sm font-semibold text-slate-900">LinkedIn & TikTok</span>
+																							</div>
+																							<p class="mt-1 text-xs text-slate-600">Multi‑Platform</p>
+																						</li>
+																					</ul>
+																					<dl class="mt-5 grid grid-cols-2 gap-4 text-sm bg-slate-50 ring-1 ring-slate-200 rounded-xl p-4">
+																						<div>
+																							<dt class="text-slate-500">Branche</dt>
+																							<dd class="font-medium text-slate-900">IT & Tech</dd>
+																						</div>
+																						<div>
+																							<dt class="text-slate-500">Format</dt>
+																							<dd class="font-medium text-slate-900">9:16, 30s</dd>
+																						</div>
+																					</dl>
+
+																				<!-- Testimonial inside showcase box -->
+																				<div class="mt-6">
+																					<figure>
+																						<blockquote class="rounded-2xl bg-white ring-1 ring-slate-200 shadow-custom p-5 sm:p-6">
+
+																							<p class="mt-3 text-slate-600">„Die Auswertungen bringen uns jede Woche Klarheit. Der Turnaround ist schnell und die Kommunikation ist top.“</p>
+																							<figcaption class="mt-4 flex items-center gap-3 text-sm">
+																								<span class="font-semibold text-slate-900">Anna S.</span>
+																								<span class="text-slate-300">|</span>
+																								<span class="text-slate-500">Leitung Marketing</span>
+																							</figcaption>
+																						</blockquote>
+																					</figure>
+																				</div>
+
+																				</div>
+																				<div class="lg:col-span-5 flex justify-center lg:justify-end">
+																					<div class="relative w-[180px] sm:w-[220px] lg:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-slate-200 shadow-custom bg-slate-100">
+																						<video class="absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1514511547117-f9c6f2d2adab?q=80&w=1200&auto=format&fit=crop">
+																							<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+																						</video>
+																					</div>
+																				</div>
+																			</div>
+																		</article>
+
+																		<!-- Slide 3 -->
+																		<article class="shrink-0 w-full">
+																			<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+																				<div class="lg:col-span-7">
+																					<span class="inline-flex items-center gap-2 rounded-full bg-slate-100 text-slate-700 ring-1 ring-slate-200 px-3 py-1 text-xs font-medium">
+																						<span class="h-1.5 w-1.5 rounded-full bg-slate-500"></span>
+																						Projekt
+																					</span>
+																					<h3 class="mt-3 text-2xl sm:text-3xl font-bold text-slate-900">Event‑Highlight – <span class="text-slate-600">Vertikaler Schnitt</span></h3>
+																					<p class="mt-3 text-slate-600">Vertical Recap für Social Media. Schnelle Cuts, Beat‑Matching, Motion‑Text – perfekt als Teaser vor dem Aftermovie.</p>
+																					<ul class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+																						<li class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-3">
+																							<div class="flex items-center gap-2">
+																								<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-600 text-white text-xs font-bold">⏯</span>
+																								<span class="text-sm font-semibold text-slate-900">15s & 30s</span>
+																							</div>
+																							<p class="mt-1 text-xs text-slate-600">Varianten</p>
+																						</li>
+																						<li class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-3">
+																							<div class="flex items-center gap-2">
+																								<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-600 text-white text-xs font-bold">📤</span>
+																								<span class="text-sm font-semibold text-slate-900">Alle Plattformen</span>
+																							</div>
+																							<p class="mt-1 text-xs text-slate-600">Reels, TikTok, Shorts</p>
+																						</li>
+																						<li class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-3">
+																							<div class="flex items-center gap-2">
+																								<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-600 text-white text-xs font-bold">🎨</span>
+																								<span class="text-sm font-semibold text-slate-900">Safe Area</span>
+																							</div>
+																							<p class="mt-1 text-xs text-slate-600">Branding‑optimiert</p>
+																						</li>
+																					</ul>
+																					<dl class="mt-5 grid grid-cols-2 gap-4 text-sm bg-slate-50 ring-1 ring-slate-200 rounded-xl p-4">
+																						<div>
+																							<dt class="text-slate-500">Ort</dt>
+																							<dd class="font-medium text-slate-900">Köln</dd>
+																						</div>
+																						<div>
+																							<dt class="text-slate-500">Dauer</dt>
+																							<dd class="font-medium text-slate-900">2 Drehtage</dd>
+																						</div>
+																					</dl>
+
+																				<!-- Testimonial inside showcase box -->
+																				<div class="mt-6">
+																					<figure>
+																						<blockquote class="rounded-2xl bg-white ring-1 ring-slate-200 shadow-custom p-5 sm:p-6">
+
+																							<p class="mt-3 text-slate-600">“Vom Onboarding bis zum Support lief alles reibungslos. Wir sparen jede Woche Stunden – und treffen bessere Entscheidungen.”</p>
+																							<figcaption class="mt-4 flex items-center gap-3 text-sm">
+																								<span class="font-semibold text-slate-900">Daniel K.</span>
+																								<span class="text-slate-300">|</span>
+																								<span class="text-slate-500">Leitung Operations</span>
+																							</figcaption>
+																						</blockquote>
+																					</figure>
+																				</div>
+
+																				</div>
+																				<div class="lg:col-span-5 flex justify-center lg:justify-end">
+																					<div class="relative w-[180px] sm:w-[220px] lg:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-slate-200 shadow-custom bg-slate-100">
+																						<video class="absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop">
+																							<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+																						</video>
+																					</div>
+																				</div>
+																			</div>
+																		</article>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+
+													<script>
+													(function(){
+														const section = document.getElementById('showcases');
+														const viewport = document.getElementById('showcase-viewport');
+														const track = document.getElementById('showcase-track');
+														const slides = Array.from(track.children);
+														const prev = document.getElementById('showcase-prev');
+														const next = document.getElementById('showcase-next');
+														const dotsWrap = document.getElementById('showcase-dots');
+												const countEl = document.getElementById('showcase-count');
+														let index = 0;
+
+														function syncHeights(){
+															const active = slides[index];
+															viewport.style.height = active.offsetHeight + 'px';
+														}
+
+														function refreshDots(){
+															if (!dotsWrap) return;
+															Array.from(dotsWrap.children).forEach((d, i) => {
+																d.classList.toggle('bg-indigo-600', i === index);
+																d.classList.toggle('bg-slate-300', i !== index);
+															});
+													if (countEl) countEl.textContent = `${index + 1} / ${slides.length}`;
+														}
+
+														function moveTo(i, animate = true){
+															index = (i + slides.length) % slides.length;
+															track.style.transitionDuration = animate ? '500ms' : '0ms';
+															track.style.transform = `translateX(${-index * 100}%)`;
+															syncHeights();
+															refreshDots();
+														}
+
+														function setSlideWidths(){
+															const w = viewport.clientWidth;
+															slides.forEach(s => s.style.width = w + 'px');
+															moveTo(index, false);
+														}
+
+														prev?.addEventListener('click', () => moveTo(index - 1));
+														next?.addEventListener('click', () => moveTo(index + 1));
+														section?.addEventListener('keydown', (e) => {
+															if (e.key === 'ArrowLeft') { e.preventDefault(); moveTo(index - 1); }
+															if (e.key === 'ArrowRight') { e.preventDefault(); moveTo(index + 1); }
+														});
+
+														window.addEventListener('resize', setSlideWidths);
+
+														// init
+														requestAnimationFrame(() => {
+															setSlideWidths();
+															syncHeights();
+															// build dots
+															if (dotsWrap) {
+																dotsWrap.innerHTML = '';
+																slides.forEach((_, i) => {
+																	const b = document.createElement('button');
+																	b.type = 'button';
+																	b.className = 'h-1.5 w-6 rounded-full bg-slate-300 hover:bg-slate-400 transition-colors';
+																	b.setAttribute('aria-label', `Slide ${i+1}`);
+																	b.addEventListener('click', () => moveTo(i));
+																	dotsWrap.appendChild(b);
+																});
+																refreshDots();
+															}
+														});
+													})();
+												</script>
+
+																<!-- Pricing Section -->
+																<section id="pricing" class="mt-20">
+																	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+																		<div class="text-center">
+																			<span class="inline-flex items-center rounded-full bg-slate-100 text-slate-700 ring-1 ring-slate-200 px-3 py-1 text-xs font-medium">Preise</span>
+																			<h2 class="mt-4 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">Einfach & transparent – ohne versteckte Kosten</h2>
+																			<p class="mt-2 text-slate-500">7 Tage kostenlos testen. Keine Kreditkarte nötig.</p>
+
+																			<!-- Billing toggle -->
+																			<div class="mt-6 flex items-center justify-center gap-3">
+																				<button id="label-monthly" type="button" class="text-sm font-medium text-slate-600">Monatlich</button>
+																				<button id="billing-toggle" type="button" role="switch" aria-checked="true" class="relative h-6 w-10 rounded-full bg-indigo-600 ring-1 ring-indigo-600/30 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2">
+																					<span id="billing-knob" class="absolute top-0.5 left-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform transform translate-x-4"></span>
+																				</button>
+																				<button id="label-yearly" type="button" class="text-sm font-medium text-slate-900">Jährlich</button>
+																			</div>
+																		</div>
+
+																		<!-- Cards -->
+																		<div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+																			<!-- Free -->
+																			<article class="rounded-3xl bg-indigo-600 text-white ring-1 ring-indigo-500/30 shadow-custom overflow-hidden">
+																				<div class="p-6 sm:p-8">
+																					<div class="flex items-center justify-between">
+																						<span class="text-xs font-semibold tracking-wide rounded-full bg-indigo-500/30 ring-1 ring-white/20 px-2.5 py-1">Kostenlos</span>
+																					</div>
+																					<div class="mt-6 grid grid-cols-1 md:grid-cols-2 md:items-center gap-6">
+																						<div>
+																							<p class="text-5xl font-bold leading-none">€0</p>
+																							<p class="mt-2 text-sm text-indigo-100">Abrechnung: <span id="period-free">jährlich</span></p>
+																						</div>
+																						<div class="md:border-l md:border-white/20 md:pl-6">
+																							<ul class="space-y-3 text-sm">
+																								<li class="flex items-center gap-2"><svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414L8.414 15 5 11.586a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"/></svg> 1 Beratungscall</li>
+																								<li class="flex items-center gap-2"><svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414L8.414 15 5 11.586a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"/></svg> Ideenliste mit 5 Hooks</li>
+																								<li class="flex items-center gap-2"><svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414L8.414 15 5 11.586a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"/></svg> Feedback zu 1 Creative</li>
+																								<li class="flex items-center gap-2"><svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414L8.414 15 5 11.586a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"/></svg> E‑Mail Support</li>
+																							</ul>
+																							<button class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-indigo-700 shadow hover:bg-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50">Jetzt starten</button>
+																						</div>
+																					</div>
+																				</div>
+																			</article>
+
+																			<!-- Premium -->
+																			<article class="rounded-3xl bg-white ring-1 ring-slate-200 shadow-custom overflow-hidden">
+																				<div class="p-6 sm:p-8">
+																					<div class="flex items-center justify-between">
+																						<span class="text-xs font-semibold tracking-wide rounded-full bg-slate-100 text-slate-700 ring-1 ring-slate-200 px-2.5 py-1">Premium</span>
+																					</div>
+																					<div class="mt-6 grid grid-cols-1 md:grid-cols-2 md:items-center gap-6">
+																						<div>
+																							<p class="text-5xl font-bold leading-none text-indigo-600"><span id="price-premium">€150</span></p>
+																							<p class="mt-2 text-sm text-slate-500">Abrechnung: <span id="period-premium">jährlich</span></p>
+																						</div>
+																						<div class="md:border-l md:border-slate-200 md:pl-6">
+																						<ul class="space-y-3 text-sm text-slate-700">
+																							<li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414L8.414 15 5 11.586a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"/></svg> 4 Kurzvideos/Monat</li>
+																							<li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414L8.414 15 5 11.586a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"/></svg> Skript, Dreh & Schnitt inkl. Subtitles</li>
+																							<li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414L8.414 15 5 11.586a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"/></svg> A/B‑Testing & Reporting</li>
+																							<li class="flex items-center gap-2"><svg class="h-4 w-4 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414L8.414 15 5 11.586a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"/></svg> Priorisierter Support</li>
+																						</ul>
+																						<button onclick="location.href='kontakt.html'" class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Anfrage senden</button>
+																						</div>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																	</div>
+																</section>
+
+																<script>
+																	(function(){
+																		const toggle = document.getElementById('billing-toggle');
+																		const knob = document.getElementById('billing-knob');
+																		const labelMonthly = document.getElementById('label-monthly');
+																		const labelYearly = document.getElementById('label-yearly');
+																		const pricePremium = document.getElementById('price-premium');
+																		const periodPremium = document.getElementById('period-premium');
+																		const periodFree = document.getElementById('period-free');
+
+																		let yearly = true; // default per design
+
+																		function applyUI(){
+																			// switch
+																			const on = yearly;
+																			toggle?.setAttribute('aria-checked', String(on));
+																			toggle?.classList.toggle('bg-indigo-600', on);
+																			toggle?.classList.toggle('ring-indigo-600/30', on);
+																			toggle?.classList.toggle('bg-slate-200', !on);
+																			toggle?.classList.toggle('ring-slate-300', !on);
+																			knob?.classList.toggle('translate-x-4', on);
+																			knob?.classList.toggle('translate-x-0', !on);
+
+																			// labels
+																			labelMonthly?.classList.toggle('text-slate-900', !on);
+																			labelMonthly?.classList.toggle('text-slate-600', on);
+																			labelYearly?.classList.toggle('text-slate-900', on);
+																			labelYearly?.classList.toggle('text-slate-600', !on);
+
+																			// prices
+																			if (pricePremium && periodPremium && periodFree) {
+																				pricePremium.textContent = on ? '€150' : '€19';
+																				periodPremium.textContent = on ? 'jährlich' : 'monatlich';
+																				periodFree.textContent = on ? 'jährlich' : 'monatlich';
+																			}
+																		}
+
+																		function setYearly(val){
+																			yearly = val;
+																			applyUI();
+																		}
+
+																		toggle?.addEventListener('click', () => setYearly(!yearly));
+																		labelMonthly?.addEventListener('click', () => setYearly(false));
+																		labelYearly?.addEventListener('click', () => setYearly(true));
+
+																		applyUI();
+																	})();
+																</script>
+
+																<!-- Contact Section -->
+																<section id="contact" class="mt-20">
+																	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-reveal-group>
+																		<div class="text-center">
+																			<h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">Kontakt</h2>
+																			<p class="mt-2 text-slate-500">Schreib mir dein Anliegen – ich melde mich schnellstmöglich zurück.</p>
+																		</div>
+
+																		<div class="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+																			<!-- Left contact cards -->
+																			<div class="lg:col-span-4 space-y-4">
+																				<!-- Phone card -->
+																				<div class="rounded-3xl bg-indigo-600 text-white ring-1 ring-indigo-500/30 p-6 sm:p-8 shadow-custom">
+																					<div class="flex items-start gap-3">
+																						<span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/20">
+																							<svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.02l-2.2 2.2z"/></svg>
+																						</span>
+																						<div>
+																							<p class="text-sm font-medium text-white/80">Ruf mich direkt an</p>
+																							<p class="mt-2 text-3xl font-bold tracking-tight">01234 / 567890</p>
+																						</div>
+																					</div>
+																					<a href="tel:01234567890" class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-indigo-700 shadow hover:bg-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50">Kontakt aufnehmen</a>
+																				</div>
+
+																				<!-- Email card -->
+																				<div class="rounded-3xl bg-slate-50 ring-1 ring-slate-200 p-6 sm:p-8 shadow-custom">
+																					<div class="flex items-start gap-3">
+																						<span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 ring-1 ring-slate-200">
+																							<svg class="h-5 w-5 text-slate-700" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v.35l-10 6.25L2 6.35V6zm0 3.14V18a2 2 0 002 2h16a2 2 0 002-2V9.14l-9.4 5.88a2 2 0 01-2.2 0L2 9.14z"/></svg>
+																						</span>
+																						<div>
+																							<p class="text-sm font-medium text-slate-600">Schreib dem Team</p>
+																							<p class="mt-2 text-xl font-semibold text-slate-900">kontakt@niklasganz.de</p>
+																						</div>
+																					</div>
+																					<a href="mailto:kontakt@niklasganz.de" class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-700">E‑Mail senden</a>
+																				</div>
+																			</div>
+
+																			<!-- Right form -->
+																			<div class="lg:col-span-8">
+																				<form action="mailto:kontakt@niklasganz.de" method="post" enctype="text/plain" class="rounded-3xl bg-white ring-1 ring-slate-200 p-6 sm:p-8 shadow-custom">
+																					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+																						<!-- Name -->
+																						<div class="relative">
+																							<label for="cf-name" class="sr-only">Name</label>
+																							<span class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+																								<svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 10-5-5 5 5 0 005 5zm-7 8a7 7 0 0114 0z"/></svg>
+																							</span>
+																							<input id="cf-name" name="Name" type="text" required placeholder="Name" class="w-full rounded-full bg-white pl-11 pr-4 py-3 text-sm ring-1 ring-slate-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+																						</div>
+																						<!-- Email -->
+																						<div class="relative">
+																							<label for="cf-email" class="sr-only">E‑Mail</label>
+																							<span class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+																								<svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v.35l-10 6.25L2 6.35V6zm0 3.14V18a2 2 0 002 2h16a2 2 0 002-2V9.14l-9.4 5.88a2 2 0 01-2.2 0L2 9.14z"/></svg>
+																							</span>
+																							<input id="cf-email" name="E-Mail" type="email" required placeholder="E‑Mail Adresse" class="w-full rounded-full bg-white pl-11 pr-4 py-3 text-sm ring-1 ring-slate-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+																						</div>
+																						<!-- Phone -->
+																						<div class="relative sm:col-span-2">
+																							<label for="cf-phone" class="sr-only">Telefon</label>
+																							<span class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+																								<svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.02l-2.2 2.2z"/></svg>
+																							</span>
+																							<input id="cf-phone" name="Telefon" type="tel" placeholder="Telefonnummer (optional)" class="w-full rounded-full bg-white pl-11 pr-4 py-3 text-sm ring-1 ring-slate-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+																						</div>
+																						<!-- Message -->
+																						<div class="sm:col-span-2">
+																							<label for="cf-msg" class="sr-only">Nachricht</label>
+																							<textarea id="cf-msg" name="Nachricht" rows="6" required placeholder="Nachricht..." class="w-full rounded-2xl bg-white px-4 py-3 text-sm ring-1 ring-slate-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+																						</div>
+																					</div>
+																					<div class="mt-6">
+																						<button type="submit" class="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-700">Nachricht senden</button>
+																					</div>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																</section>
+
+																<!-- Footer (full) -->
+												<footer class="mt-20 bg-slate-900 text-slate-300">
+													<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8" data-reveal-group>
+														<div class="flex items-center justify-between gap-6">
+															<!-- Brand -->
+															<a href="#" class="inline-flex items-center gap-3">
+																<span class="grid place-items-center h-8 w-8 rounded-full bg-indigo-600 text-white font-bold">N</span>
+																<span class="text-base font-semibold text-white">Niklas Ganz</span>
+															</a>
+
+															<!-- Nav -->
+															<nav class="hidden md:flex items-center gap-8 text-sm">
+																<a href="#about" class="hover:text-white">Über mich</a>
+																<a href="#services" class="hover:text-white">Leistungen</a>
+																<a href="#showcases" class="hover:text-white">Showcases</a>
+																<a href="#pricing" class="hover:text-white">Preise</a>
+																<a href="#contact" class="hover:text-white">Kontakt</a>
+															</nav>
+
+															<!-- Socials -->
+															<div class="flex items-center gap-3">
+																<!-- X placeholder -->
+																<a href="#" aria-label="X" class="grid place-items-center h-9 w-9 rounded-full bg-indigo-600 text-white text-sm font-semibold ring-1 ring-white/10 hover:opacity-90">X</a>
+																<!-- Instagram -->
+																<a href="#" aria-label="Instagram" class="grid place-items-center h-9 w-9 rounded-full bg-slate-800 ring-1 ring-white/10 hover:bg-slate-700">
+																	<svg class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+																		<path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3a5 5 0 110 10 5 5 0 010-10zm0 2.2a2.8 2.8 0 100 5.6 2.8 2.8 0 000-5.6zM18 6.8a1 1 0 110 2 1 1 0 010-2z"/>
+																	</svg>
+																</a>
+																<!-- LinkedIn -->
+																<a href="#" aria-label="LinkedIn" class="grid place-items-center h-9 w-9 rounded-full bg-slate-800 ring-1 ring-white/10 hover:bg-slate-700">
+																	<svg class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+																		<path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.15V23h-4v-6.5c0-1.55-.03-3.55-2.16-3.55-2.16 0-2.49 1.68-2.49 3.43V23h-4V8.5z"/>
+																	</svg>
+																</a>
+																<!-- YouTube -->
+																<a href="#" aria-label="YouTube" class="grid place-items-center h-9 w-9 rounded-full bg-slate-800 ring-1 ring-white/10 hover:bg-slate-700">
+																	<svg class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+																		<path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.2 3.5 12 3.5 12 3.5s-7.2 0-9.4.6A3 3 0 00.5 6.2 46.3 46.3 0 000 12a46.3 46.3 0 00.5 5.8 3 3 0 002.1 2.1c2.2.6 9.4.6 9.4.6s7.2 0 9.4-.6a3 3 0 002.1-2.1A46.3 46.3 0 0024 12a46.3 46.3 0 00-.5-5.8zM9.7 15.5V8.5l6 3.5-6 3.5z"/>
+																	</svg>
+																</a>
+															</div>
+														</div>
+
+														<hr class="mt-6 border-slate-800" />
+														<p class="py-6 text-center text-xs text-slate-400">© <span id="year"></span> Niklas Ganz – Alle Rechte vorbehalten.</p>
+													</div>
+												</footer>
+
+												<script>
+													// Dynamic year in footer
+													(function(){
+														const y = document.getElementById('year');
+														if (y) y.textContent = new Date().getFullYear();
+													})();
+												</script>
+
+												<script>
+												// Element-by-element scroll reveal, section for section
+												(function(){
+												  const groups = Array.from(document.querySelectorAll('[data-reveal-group]'));
+												  if (!groups.length) return;
+												  const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+												  const baseDelay = 80; // ms between siblings
+
+												  function collectChildren(container){
+												    // Take direct children that are visible layout blocks
+												    const kids = Array.from(container.children);
+												    return kids.filter(el => el.nodeType === 1);
+												  }
+
+												  function prime(el){
+												    el.classList.add('opacity-0');
+												    el.style.transform = 'translateY(16px)';
+												  }
+
+												  function reveal(el, delay){
+												    if (prefersReduced) {
+												      el.classList.remove('opacity-0');
+												      el.style.transform = '';
+												      return;
+												    }
+												    setTimeout(() => {
+												      el.classList.remove('opacity-0');
+												      el.classList.add('animate-slide-up');
+												      el.style.transform = '';
+												    }, delay);
+												  }
+
+												  function setupGroup(container){
+												    const items = collectChildren(container);
+												    items.forEach(prime);
+												    const once = { once: true };
+												    const observer = new IntersectionObserver((entries, obs) => {
+												      entries.forEach(entry => {
+												        if (entry.isIntersecting) {
+												          // stagger siblings in DOM order
+												          items.forEach((el, i) => reveal(el, i * baseDelay));
+												          obs.disconnect();
+												        }
+												      });
+												    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+												    observer.observe(container);
+												  }
+
+												  groups.forEach(setupGroup);
+												})();
+												</script>
+
+												<script>
+													// Mobile nav toggle
+													const btn = document.getElementById('mobileMenuBtn');
+													const menu = document.getElementById('mobileMenu');
+													if (btn && menu) {
+														btn.addEventListener('click', () => {
+															const isHidden = menu.classList.contains('hidden');
+															menu.classList.toggle('hidden', !isHidden);
+															btn.setAttribute('aria-expanded', String(isHidden));
+														});
+													}
+												</script>
+											</body>
+										</html>
+

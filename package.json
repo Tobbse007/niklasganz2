@@ -1,0 +1,31 @@
+{
+  "name": "niklas-ganz-website",
+  "version": "1.0.0",
+  "description": "OnePage Website für Niklas Ganz - Kurzvideo Marketing",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "serve": "npx http-server . -p 3000"
+  },
+  "keywords": [
+    "video-marketing",
+    "kurzvideos",
+    "unternehmen",
+    "anzeigen",
+    "tailwindcss"
+  ],
+  "author": "Niklas Ganz",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
